@@ -13,5 +13,17 @@
 
   <div class="field">
     <%= f.text_field :description, size: 60, placeholder: 'Add a new Aha here!' %>
+    <% if !@note.new_record? %>
+      <%= link_to "Cancel", '#' %>
+    <% end %>
   </div>
+  
 <% end %>
+
+
+
+
+
+
+
+
