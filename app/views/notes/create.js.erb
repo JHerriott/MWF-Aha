@@ -1,1 +1,2 @@
-$("ul").append("<li><%= @note.description %></li>");
+$("ul").append("<%= escape_javascript(render('note', :note => @note)) %>");
+$("#note_description").val("");

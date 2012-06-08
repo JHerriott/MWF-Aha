@@ -1,14 +1,6 @@
 <ul>
-  <% @notes.each do |note| %>
-    <li>
-      <%= note.description %>
-      <a href="#">
-        <img src="/assets/trash-can-icon.jpg" height="20" width="20">
-      </a>
-      <a href="#">
-        <img src="/assets/pencil.png" height="20" width="20">
-      </a>
-    </li>
+  <% @notes.each do |n| %>
+    <%= render 'note', :note => n %>
   <% end %>
 </ul>
 
